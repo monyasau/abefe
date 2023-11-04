@@ -41,9 +41,9 @@ export default function AboutSection() {
               <h3 className="font-semibold max-w-[50%] text-center mx-auto mb-16">
                 {item.title}
               </h3>
-              <p>{item.text1}</p>
+              <p className="text-dark-gray">{item.text1}</p>
               <br />
-              <p>{item.text2}</p>
+              <p className="text-dark-gray">{item.text2}</p>
             </div>
           ))}
         </div>
