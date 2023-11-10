@@ -6,6 +6,7 @@
 }
 
 import vectorImage from "../assets/images/Vector.png";
+import arrowIcon from "../assets/images/arrow.png";
 
 export default function FooterSection() {
   return (
@@ -23,9 +24,9 @@ export default function FooterSection() {
               Let’s work together to build something great.
             </p>
           </div>
-          <div className="my-24 ">
-            <a href="#" className="text-white font-medium hover:underline text-lg">
-              SEE MY WORKS
+          <div className="my-12 ">
+            <a href="#" className="flex gap-20 text-white font-medium hover:underline text-lg">
+              SEE MY WORKS <img src={arrowIcon} alt="" />
             </a>
             
           </div>
