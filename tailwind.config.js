@@ -8,7 +8,8 @@ export default {
     extend: {
       colors:{
         "dark-gray":"#454545"
-      }
+      },
+  
     },
   },
   plugins: [],

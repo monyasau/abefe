@@ -6,7 +6,7 @@ export default function TopNav() {
             <a href="/" className="text-xl font-bold">ThisIsAbefe</a>
            </div>
 
-           <div className="flex gap-4">
+           <div className="flex gap-14">
             <a href="#" className="font-medium hover:underline">Home</a>
             <a href="#" className="text-dark-gray hover:underline">Designs</a>
             <a href="#" className="text-dark-gray hover:underline">Music</a>
