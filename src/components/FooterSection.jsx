@@ -1,5 +1,10 @@
 // import vectorImage from "../assets/images/Vector.png";
 import arrowIcon from "../assets/images/arrow.png";
+import behanceIcon from "../assets/images/behance.png"
+import linkedinIcon from "../assets/images/linkedin.png"
+import iGIcon from "../assets/images/instagram.png"
+import xIcon from "../assets/images/x.png"
+
 
 export default function FooterSection() {
   return (
@@ -27,16 +32,25 @@ export default function FooterSection() {
 
           <div className=" my-24">
             <div className="grid  grid-cols-4 mx-ato">
-            <a href="#" className=" text-xl mx-auto text-white hover:underline">Behance</a>
-            <a href="#" className=" text-xl mx-auto text-white hover:underline">Linkedin</a>
-            <a href="#" className=" text-xl mx-auto text-white hover:underline">Instagram</a>
-            <a href="#" className=" text-2xl  mx-auto text-white hover:underline">X</a>
-            {/* <br /> */}
+              <a href="#" className=" text-xl mx-auto text-white hover:underline">Behance</a>
+              <a href="#" className=" text-xl mx-auto text-white hover:underline">Linkedin</a>
+              <a href="#" className=" text-xl mx-auto text-white hover:underline">Instagram</a>
+              <a href="#" className=" text-2xl  mx-auto text-white hover:underline">X</a>
+              {/* <br /> */}
             </div>
             <a href="#" className=" text-2xl px-10 my-44  mx-auto text-white hover:underline">Olajide3212@gmail.com</a>
           </div>
         </div>
-           <div className="py-32 text-white font-inter text-xl text-center">© Olajide Sodiq 2023 | </div> 
+        <div className="mx-auto py-32 text-white font-inter text-xl text-center flex items-center ">
+          <div className="flex mx-auto">
+          <span className="mx-4"> © Olajide Sodiq 2023 | </span><div className="flex gap-14">
+          <a href="#" className=""><img src={behanceIcon} alt="" /></a>
+          <a href="#" className=""><img src={linkedinIcon} alt="" /></a>
+          <a href="#" className=""><img src={iGIcon} alt="" /></a>
+          <a href="#" className=""><img src={xIcon} alt="" /></a>
+        </div>
+        </div>
+        </div>
       </div>
     </>
   );
