@@ -1,8 +1,14 @@
 export default function TopNav() {
+  let dropdownIcon = document.getElementById("dropdownMenuToggleIcon");
+  let backdrop = document.getElementById("backdrop");
+  let defaultMenu = document.getElementById("defaultNav");
+  let smNavBar = document.getElementById("smallScreenNavBar");
+  let smNavCloseBtn = document.getElementById("closeSmNav")
+
 
   return (
     <>
-      <nav className="hidden md:block border-b">
+      <nav id="defaultNav" className="hidden md:block border-b">
         <div className="md:max-w-screen-xl mx-auto py-4 flex w-full justify-between">
           <div>
             <a href="/" className="text-xl font-bold">
@@ -42,11 +48,15 @@ export default function TopNav() {
               ThisIsAbefe
             </a>
           </div>
-      <div className="dropdown align-right md:hidden items-center flex">
+      <div  id="dropdownMenuToggleIcon" className=" dropdown align-right md:hidden items-center flex" onClick={() => {
+    backdrop.classList.remove("hidden");
+    smNavBar.classList.remove("hidden")
+    defaultMenu.classList.add("hidden");
+  }}>
         <a href="#" className="text-slate-600 font-bold mx-4">Menu</a>
 
 
-      <svg width="24" height="24" id="dropdownMenuToggleIcon" className="md:hidden">
+      <svg width="24" height="24" className="md:hidden">
           <path
             d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
             stroke="currentColor"
@@ -58,7 +68,7 @@ export default function TopNav() {
       
       <div
         id="smallScreenNavBar"
-        className="hidden fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5"
+        className="hidden fixed z-50 top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5"
       >
         <div
           id="closeSmNav"
@@ -104,7 +114,7 @@ export default function TopNav() {
 
       <div
         id="backdrop"
-        className="hidden fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
+        className="hidden fixed inset-0 z-40 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
       ></div>
       
     </>

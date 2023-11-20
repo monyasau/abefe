@@ -24,7 +24,6 @@ export default function AboutSection() {
     },
   ];
 
-  console.log(sectionItems);
 
   return (
     <div className="  bg-[#D9D9D9]">
@@ -35,9 +34,9 @@ export default function AboutSection() {
         </h2>
         <img src={TitleUnderline} alt="" className="mx-auto max-w-sm" />
 
-        <div className="grid grid-cols-3 gap-8 pt-16">
+        <div className="md:grid grid-cols-3 gap-8 pt-16">
           {sectionItems.map((item, i) => (
-            <div key={i} className="border-2 border-black p-6">
+            <div key={i} className="border-2 my-6 md:my-0 border-black p-6">
               <h3 className="font-semibold max-w-[50%] text-center mx-auto mb-16">
                 {item.title}
               </h3>

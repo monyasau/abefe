@@ -10,7 +10,7 @@ export default function FooterSection() {
   return (
     <>
       <div className="bg-[#222222] py-24">
-        <div className=" max-w-screen-xl mx-auto  grid grid-cols-2">
+        <div className=" max-w-screen-xl mx-auto  md:grid grid-cols-2">
           <div>
             <div className="pb-24">
               <h1 className=" text-white font-semibold text-3xl">
