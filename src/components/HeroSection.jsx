@@ -3,7 +3,7 @@ import arrowIcon from "../assets/images/black-arrow.png";
 
 export default function HeroSection() {
     return (
-        <section className="max-w-screen-xl mx-auto md:grid text-center grid-cols-2 py-12">
+        <section className="max-w-screen-xl mx-auto md:grid md:text-start text-center grid-cols-2 py-12">
             <div className="md:flex md:flex-col md:justify-center">
                 <h1 className="font-extrabold text-4xl md:max-w-sm">A creative product & music designer.</h1>
 
@@ -13,7 +13,7 @@ export default function HeroSection() {
                 </p>
 
                 <div>
-                    <a href="#" className="font-medium hover:underline text-lg">SEE MY WORKS <img src={arrowIcon} alt="" /></a>
+                    <a href="#" className="font-medium hover:underline text-lg flex justify-center md:justify-normal">SEE MY WORKS <img className="mx-8 hidden md:block" src={arrowIcon} alt="" /></a>
                 </div>
             </div>
 
