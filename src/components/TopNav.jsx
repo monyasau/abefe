@@ -59,6 +59,11 @@ export default function TopNav() {
         </div>
 
         {menu && (
+          <>
+          <div
+          id="backdrop"
+          className=" fixed inset-0 z-40 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
+        ></div>
           <div
             id="smallScreenNavBar"
             className="fixed z-50 top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5"
@@ -105,13 +110,9 @@ export default function TopNav() {
               </li>
             </ul>
           </div>
+          </>
         )}
       </div>
-
-      <div
-        id="backdrop"
-        className="hidden fixed inset-0 z-40 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
-      ></div>
     </>
   );
 }
