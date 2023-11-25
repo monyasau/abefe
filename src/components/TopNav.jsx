@@ -1,17 +1,13 @@
 import { useState } from "react";
 
 export default function TopNav() {
-  let dropdownIcon = document.getElementById("dropdownMenuToggleIcon");
-  let backdrop = document.getElementById("backdrop");
-  let defaultMenu = document.getElementById("defaultNav");
-  let smNavBar = document.getElementById("smallScreenNavBar");
-  let smNavCloseBtn = document.getElementById("closeSmNav");
 
   const [menu, setMenu] = useState(false);
 
   return (
     <>
-      <div className="flex justify-between py-2 px-4">
+            <nav className=" py-6 border-b">
+      <div className="flex max-w-screen-xl w-full mx-auto justify-between py-2 md:px-0 px-4">
         <div>
           <a href="/" className="text-xl font-bold">
             ThisIsAbefe
@@ -113,6 +109,7 @@ export default function TopNav() {
           </>
         )}
       </div>
+      </nav>
     </>
   );
 }
