@@ -31,17 +31,17 @@ export default function FooterSection() {
           </div>
 
           <div className=" md:my-24">
-            <div className="grid  grid-cols-4 mx-ato">
+            <div className="grid  grid-cols-4 ">
               <a href="#" className=" text-xl mx-auto text-white hover:underline">Behance</a>
               <a href="#" className=" text-xl mx-auto text-white hover:underline">Linkedin</a>
               <a href="#" className=" text-xl mx-auto text-white hover:underline">Instagram</a>
-              <a href="#" className=" text-2xl  mx-auto text-white hover:underline">X</a>
+              <a href="#" className=" text-xl  mx-auto text-white hover:underline">X</a>
               {/* <br /> */}
             </div>
-            <a href="#" className=" text-2xl px-10 my-44  mx-auto text-white hover:underline">Olajide3212@gmail.com</a>
+            <a href="#" className=" text-2xl px-10  mx-auto text-white hover:underline">Olajide3212@gmail.com</a>
           </div>
         </div>
-        <div className="mx-auto md:py-32 pt-32 align-middle text-white font-inter text-xl text-center flex items-center ">
+        <div className="mx-auto md:py-24 pt-32 align-middle text-white font-inter text-xl text-center flex items-center ">
           <div className="md:flex mx-auto">
           <span className="mx-4 my-auto"> © Olajide Sodiq 2023 | </span><div className="flex py-6 gap-14">
           <a href="#" className=""><img src={behanceIcon} alt="" /></a>

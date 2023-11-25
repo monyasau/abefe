@@ -27,7 +27,7 @@ export default function AboutSection() {
 
   return (
     <div className="  bg-[#D9D9D9]">
-      <div className="max-w-screen-xl mx-auto py-36">
+      <div className="max-w-screen-xl mx-auto md:py-36 py-12">
         <h2 className="text-2xl font-semibold pb-4 text-center max-w-lg mx-auto">
           Explore my commitment to delivering sustainable user-friendly
           products.
