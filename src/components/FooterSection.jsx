@@ -10,9 +10,9 @@ export default function FooterSection() {
   return (
     <>
       <div className="bg-[#222222] py-24">
-        <div className=" max-w-screen-xl mx-auto  md:grid grid-cols-2">
+        <div className=" max-w-screen-xl mx-auto text-center md:text-start  md:grid grid-cols-2">
           <div>
-            <div className="pb-24">
+            <div className="md:pb-24 pb-6">
               <h1 className=" text-white font-semibold text-3xl">
                 Let’s work together.
               </h1>
@@ -23,14 +23,14 @@ export default function FooterSection() {
             <div className="my-12 ">
               <a
                 href="#"
-                className="flex gap-20 text-white font-medium hover:underline text-lg"
+                className="flex justify-center md:justify-normal gap-20 text-white font-medium hover:underline text-lg"
               >
                 SEE MY WORKS <img src={arrowIcon} alt="" />
               </a>
             </div>
           </div>
 
-          <div className=" my-24">
+          <div className=" md:my-24">
             <div className="grid  grid-cols-4 mx-ato">
               <a href="#" className=" text-xl mx-auto text-white hover:underline">Behance</a>
               <a href="#" className=" text-xl mx-auto text-white hover:underline">Linkedin</a>
@@ -41,9 +41,9 @@ export default function FooterSection() {
             <a href="#" className=" text-2xl px-10 my-44  mx-auto text-white hover:underline">Olajide3212@gmail.com</a>
           </div>
         </div>
-        <div className="mx-auto py-32 text-white font-inter text-xl text-center flex items-center ">
-          <div className="flex mx-auto">
-          <span className="mx-4"> © Olajide Sodiq 2023 | </span><div className="flex gap-14">
+        <div className="mx-auto md:py-32 pt-32 align-middle text-white font-inter text-xl text-center flex items-center ">
+          <div className="md:flex mx-auto">
+          <span className="mx-4 my-auto"> © Olajide Sodiq 2023 | </span><div className="flex py-6 gap-14">
           <a href="#" className=""><img src={behanceIcon} alt="" /></a>
           <a href="#" className=""><img src={linkedinIcon} alt="" /></a>
           <a href="#" className=""><img src={iGIcon} alt="" /></a>
