@@ -2,6 +2,7 @@
 import arrowIcon from "../assets/images/arrow.png";
 import behanceIcon from "../assets/images/behance.png"
 import linkedinIcon from "../assets/images/linkedin.png"
+import dribbleIcon from "../assets/images/linkedin.png"
 import iGIcon from "../assets/images/instagram.png"
 import xIcon from "../assets/images/x.png"
 
@@ -38,13 +39,14 @@ export default function FooterSection() {
               <a href="#" className=" text-xl  mx-auto text-white hover:underline">X</a>
               {/* <br /> */}
             </div>
-            <a href="#" className=" text-2xl px-10  mx-auto text-white hover:underline">Olajide3212@gmail.com</a>
+            <a href="mailto:olajide3212@gmail.com" className=" text-2xl px-10  mx-auto text-white hover:underline">Olajide3212@gmail.com</a>
           </div>
         </div>
         <div className="mx-auto md:py-24 pt-32 align-middle text-white font-inter text-xl text-center flex items-center ">
           <div className="md:flex mx-auto">
           <span className="mx-4 my-auto"> © Olajide Sodiq 2023 | </span><div className="flex py-6 gap-14">
           <a href="#" className=""><img src={behanceIcon} alt="" /></a>
+          <a href="https://dribbble.com/ThisIsAbefe" className=""><img src={dribbleIcon} alt="loading" /></a>
           <a href="#" className=""><img src={linkedinIcon} alt="" /></a>
           <a href="#" className=""><img src={iGIcon} alt="" /></a>
           <a href="#" className=""><img src={xIcon} alt="" /></a>
