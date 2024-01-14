@@ -59,6 +59,7 @@ export default function TopNav() {
           <div
           id="backdrop"
           className=" fixed inset-0 z-40 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
+          onClick={()=>setMenu(false)}
         ></div>
           <div
             id="smallScreenNavBar"
